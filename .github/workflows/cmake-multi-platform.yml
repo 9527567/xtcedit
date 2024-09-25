@@ -36,8 +36,10 @@ jobs:
 
     steps:
                   
-    - name: LLVM Install          
-      uses: FreeMasen/llvm-install-action@v1.0.0
+    - name: Setup LLVM
+      uses: ZhongRuoyu/setup-llvm@v0
+      with:
+        llvm-version: 17
     - uses: actions/checkout@v4
 
     - name: Set reusable strings
