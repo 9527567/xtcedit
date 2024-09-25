@@ -74,5 +74,4 @@ jobs:
       with:
           files: |
             build/main
-            Release.txt
             LICENSE
