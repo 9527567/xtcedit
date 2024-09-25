@@ -70,7 +70,7 @@ jobs:
       run: ctest --build-config ${{ matrix.build_type }}
     - name: Release
       uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')
+      if: startsWith(https://github.com/9527567/xtcedit/, 'refs/tags/')
       with:
           files: |
             build/main
